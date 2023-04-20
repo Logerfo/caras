@@ -1,6 +1,6 @@
 $(document).ready(async function () {
   const password = prompt("Enter in the password");
-  const maxLength = 36;
+  const maxLength = 42;
   var randomNum = Math.floor(Math.random() * maxLength + 1);
   document.getElementById("myself").src = await decrypt(randomNum, password);
   for (let i = 1; i <= maxLength; i++) {
